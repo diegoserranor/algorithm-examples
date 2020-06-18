@@ -24,11 +24,11 @@ def mergeSort(A):
         j = 0
 
         while i < len(B) and j < len(C):
-            if B[i] < C[j]:             
+            if B[i] <= C[j]:             
                 D[k] = B[i]
                 i += 1
                 k += 1
-            elif C[j] < B[i]:
+            elif C[j] <= B[i]:
                 D[k] = C[j]
                 j += 1
                 k += 1
@@ -48,7 +48,7 @@ def mergeSort(A):
         return D
 
 # Main code
-array = [11, 3, 5, 2, 0]
+array = [11, 3, 5, 2, 2]
 result = mergeSort(array)
 
 print(result)
