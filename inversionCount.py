@@ -42,7 +42,7 @@ def sortAndCount(A):
                 D[k] = C[j]
                 j += 1
                 k += 1
-                inversions += 1
+                inversions += len(B) - i
 
         # Include left-over indexes after sorting
         while i < len(B):
